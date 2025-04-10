@@ -1,0 +1,167 @@
+.app header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .app header .connect-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  .app header .connect-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .app main {
+    padding-bottom: 60px;
+  }
+  
+  .app .stats, .app .chart, .app .live-transfers {
+    max-width: 1000px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .app .stats:hover, .app .chart:hover, .app .live-transfers:hover {
+    transform: translateY(-5px);
+  }
+  
+  .app .stats h2, .app .chart h2, .app .live-transfers h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .app .stats p, .app .live-transfers li {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #34495e;
+  }
+  
+  .app .stats .note {
+    color: #e74c3c;
+    font-size: 0.8em;
+    font-style: italic;
+  }
+  
+  .app .stats span {
+    font-weight: bold;
+    color: #3498db;
+  }
+  
+  .app .live-transfers ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .app .live-transfers li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .app footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #34495e;
+  }
+  
+  .loading p {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .app header {
+      padding: 10px;
+    }
+  
+    .app header h1 {
+      font-size: 1.5em;
+    }
+  
+    .app header .connect-btn {
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      font-size: 0.8em;
+    }
+  
+    .app .stats, .app .chart, .app .live-transfers {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .app .stats h2, .app .chart h2, .app .live-transfers h2 {
+      font-size: 1.2em;
+    }
+  
+    .app .stats p, .app .live-transfers li {
+      font-size: 0.9em;
+    }
+  
+    .app .stats .note {
+      font-size: 0.7em;
+    }
+  
+    .app .chart {
+      height: 300px;
+    }
+  
+    .app footer {
+      font-size: 0.8em;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app header h1 {
+      font-size: 1.2em;
+    }
+  
+    .app header .connect-btn {
+      font-size: 0.7em;
+      padding: 4px 8px;
+    }
+  
+    .app .stats h2, .app .chart h2, .app .live-transfers h2 {
+      font-size: 1em;
+    }
+  
+    .app .stats p, .app .live-transfers li {
+      font-size: 0.8em;
+    }
+  
+    .app .chart {
+      height: 250px;
+    }
+  }
